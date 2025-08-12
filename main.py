@@ -1,8 +1,12 @@
 # DFS Bot Main Entry Point
-from src.lineup_optimizer import LineupOptimizer
-from src.live_monitor import LiveMonitor
-from src.notification_handler import NotificationHandler
-from src.data_collector import DataCollector
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+
+from lineup_optimizer import LineupOptimizer
+from live_monitor import LiveMonitor
+from notification_handler import NotificationHandler
+from data_collector import DataCollector
 import os
 from datetime import datetime
 
